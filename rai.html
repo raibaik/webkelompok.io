@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Link Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- My style -->
+    <style>
+      :root {
+        --mainColor: #ff9900;
+        --seconderyColor: #1c1c1c;
+        --anycolor: #121212;
+      }
+
+      body {
+        background: rgb(33, 33, 33);
+        background: linear-gradient(120deg, rgba(33, 33, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
+      }
+      /* Navbar */
+      .navbar {
+        background-color: var(--anycolor);
+      }
+
+      .nav-link.active {
+        font-weight: 600;
+      }
+
+      .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .nav-link:hover {
+        color: #ff9900;
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+      }
+      /* End Navvar */
+
+      /* Hero */
+      .color-acsent {
+        color: var(--mainColor);
+      }
+
+      section h1 {
+        color: var(--mainColor);
+      }
+
+      #hero {
+        color: #ffff;
+        min-height: 100hv;
+        padding-bottom: 50px;
+        padding-top: 100px;
+      }
+
+      #hero p {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      #hero p a {
+        text-decoration: none;
+        color: var(--mainColor);
+      }
+
+      #hero p a:hover {
+        color: rgb(255, 79, 15);
+      }
+
+      #hero img {
+        transition: 1s;
+      }
+
+      #hero img:hover {
+        transform: scale(1.05) rotate(3deg);
+        z-index: 1;
+      }
+
+      .icon-link {
+        fill: #ffff;
+        text-decoration: none;
+      }
+
+      /* CTA */
+      .btn-custom1 {
+        background-color: var(--mainColor);
+        text-align: center;
+        font-weight: 700;
+        min-width: 120px;
+        color: #ffff;
+        font-size: 15px;
+      }
+      /* ENd CTA */
+
+      /* About */
+      #about {
+        min-height: 300px;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(33, 33, 33, 1) 100%);
+        color: #ffff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      #about h1 {
+        font-weight: 700;
+      }
+
+      #about p {
+        margin-left: 80px;
+        padding-top: 35px;
+        color: #ffff;
+      }
+
+      hr {
+        width: 25%;
+        margin: 0 auto;
+      }
+      /* End About */
+
+      /* Skill */
+      #skill {
+        min-height: 300px;
+        width: 100%;
+        color: #ffff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      #skill img {
+        width: 11%;
+        margin: 5px;
+        padding-top: 35px;
+        transition: 1s;
+      }
+
+      #skill img:hover {
+        transform: scale(1.3);
+        z-index: 1;
+      }
+
+      /* End Skill */
+    </style>
+    <title>Prortofolio - Rai</title>
+    <link rel="icon" href="/img/icon1.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="home.html"><img src="/img/icon1.png" alt="" width="25" class="d-inline-block align-text-top mx-2" /> Kelompok IF21D </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active ms-4" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link ms-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Team </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Nur Habibah</a></li>
+                <li><a class="dropdown-item" href="#">Daffa</a></li>
+                <li><a class="dropdown-item" href="#">Al Fathir</a></li>
+                <li><a class="dropdown-item" href="#">Firmansyah</a></li>
+                <li><a class="dropdown-item" href="#">Ihsan</a></li>
+                <li><a class="dropdown-item" href="#">Putri</a></li>
+                <li><a class="dropdown-item" href="#">Wildan</a></li>
+                <li><a class="dropdown-item" href="#">Ryan</a></li>
+                <li><a class="dropdown-item" href="#">Yudha</a></li>
+                <li><a class="dropdown-item" href="/rai.html">Rai</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar and -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-1 my-auto">
+            <h2>Hallo,</h2>
+            <h1 class="fw-bold">I am Rai Malik Al Musayyid</h1>
+            <p>Graphic Designer | UI/UX Design | Web Depelopment <br />and I a student at <a href="http://ubpkarawang.ac.id/" class="fw-bold">University of Buana Perjuangan Karawang</a></p>
+            <button class="btn btn-custom1" href="https://www.instagram.com/raimlk/">Contact Me</button>
+          </div>
+          <div class="col-5">
+            <img src="https://i.ibb.co/8X5BjZY/Group-1.png" width="75%" class="float-end" alt="" />
+          </div>
+          <div class="social-icon col-5 offset-1">
+            <div class="icon-item">
+              <a class="icon-link" href="">
+                <svg
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 504.4 504.4"
+                  style="enable-background: new 0 0 504.4 504.4"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+            C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
+            c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
+            c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </a>
+              <a class="icon-link" href="">
+                <svg width="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill-rule="nonzero"
+                      d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a class="icon-link" href="">
+                <svg
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 310 310"
+                  style="enable-background: new 0 0 310 310"
+                  xml:space="preserve"
+                >
+                  <g id="XMLID_822_">
+                    <path
+                      id="XMLID_823_"
+                      d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+            C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+            C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+            c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+            c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+            C204.394,157.263,202.325,160.684,199.021,162.41z"
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </a>
+              <a class="icon-link" href="">
+                <svg
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 504.4 504.4"
+                  style="enable-background: new 0 0 504.4 504.4"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+            C504,57,447.2,0.2,377.6,0.2z M377.2,189c0,2.8,0,5.6,0,8.4c0,84-64.8,180.8-183.6,180.8c-36.4,0-70.4-10.4-98.8-28.4
+            c5.2,0.4,10,0.8,15.2,0.8c30.4,0,58-10,80-27.2c-28.4-0.4-52-18.8-60.4-44c4,0.8,8,1.2,12,1.2c6,0,12-0.8,17.2-2.4
+            c-28.8-6-50.8-31.6-50.8-62.4V215c8,4.8,18.4,7.6,28.8,8c-17.2-11.2-28.8-30.8-28.8-52.8c0-11.6,3.2-22.4,8.8-32
+            c32,38.4,79.2,63.6,132.8,66.4c-1.2-4.8-1.6-9.6-1.6-14.4c0-35.2,28.8-63.6,64.4-63.6c18.4,0,35.2,7.6,47.2,20
+            c14.8-2.8,28.4-8,40.8-15.6c-4.8,14.8-15.2,27.2-28.4,35.2c13.2-1.6,25.6-4.8,37.2-10C400.4,169,389.6,180.2,377.2,189z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- About -->
+
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h1 class="text-center">About</h1>
+            <hr />
+            <div class="col-9 offset-1">
+              <p class="text-center color-acsent">
+                Halo, saya Rai Malik Al Musayyid. Usia saya 20 tahun, saya seorang mahasiswa Jurusan Teknik Informatika di Universitas Buana Perjuangan Karawang. Selain seorang mahasiswa, saya juga freelance sebagai Graphic Design. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas maiores explicabo id quaerat est deleniti possimus, totam recusandae magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur totam beatae
+                reprehenderit dignissimos praesentium sequi id et incidunt. Ut voluptates ex nulla cum atque earum dicta a veritatis eum? Voluptate praesentium reiciendis expedita incidunt sunt voluptatibus mollitia recusandae porro
+                pariatur dicta laborum odit vero temporibus, iste corporis laudantium ducimus exercitationem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Sklill -->
+    <section id="skill">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <h1 class="fw-bold text-center">Skill</h1>
+              <hr />
+            </div>
+
+            <div class="col-7 text-center mt-3 icon">
+              <img src="/img/figma.png" alt="" />
+              <img src="/img/html.png" alt="" />
+              <img src="/img/css.png" alt="" />
+              <img src="/img/js.png" alt="" />
+              <img src="/img/PHP_logo.png" alt="" />
+              <img src="/img/premiere-cc-logo-png-transparent.png" alt="" />
+              <img src="/img/py.png" alt="" />
+              <img src="/img/Laravel_logo_wordmark_logotype.png" alt="" />
+              <img src="/img/ps.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End skill -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
